@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-pad/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-pad/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-pad/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-pad/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-pad/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-pad/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-pad/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-pad/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-pad/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-pad/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-pad/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-pad/build/coverage.html/index.html)
 
@@ -35,23 +35,33 @@
 ```json
 
 {
-    "name": "pad",
-    "description": "Left and right string padding",
-    "version": "1.1.0",
-    "author": "David Worms <david@adaltas.com>",
+    "author": {
+        "name": "David Worms"
+    },
+    "bugs": {
+        "url": "https://github.com/adaltas/node-pad/issues"
+    },
     "contributors": [
         {
             "name": "David Worms"
         }
     ],
+    "dependencies": {},
+    "description": "Left and right string padding",
     "devDependencies": {
         "coffee-script": "^1.12.4",
         "mocha": "^3.2.0",
         "should": "^11.2.0"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "7a7d185200ebac32f9f12ee756c3a1d087b3190b",
+        "tarball": "https://registry.npmjs.org/pad/-/pad-1.1.0.tgz"
+    },
     "engines": {
         "node": ">= 4.0.0"
     },
+    "gitHead": "13b4fd19b785d50359b47d4aebb5f3ee1ad8e5f9",
     "homepage": "https://github.com/adaltas/node-pad",
     "keywords": [
         "pad",
@@ -59,15 +69,24 @@
     ],
     "license": "BSD-3-Clause",
     "main": "./lib",
+    "maintainers": [
+        {
+            "name": "david"
+        }
+    ],
+    "name": "pad",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/adaltas/node-pad.git"
+        "url": "git+https://github.com/adaltas/node-pad.git"
     },
     "scripts": {
         "coffee": "coffee -b -o lib src",
         "pretest": "coffee -b -o lib src",
         "test": "mocha --compilers coffee:coffee-script/register --reporter dot"
-    }
+    },
+    "version": "1.1.0",
+    "bin": {}
 }
 ```
 
